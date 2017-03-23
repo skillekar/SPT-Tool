@@ -11,5 +11,5 @@ CREATE TABLE TEST1
 );
 --rollback drop table test1;
 
-ALTER TABLE TEST1 DELETED VARCHAR2(1);
+ALTER TABLE TEST1 ADD DELETED VARCHAR2(1);
 --rollback drop table test1;
