@@ -10,7 +10,7 @@
     <changeSet author="TEST_REQ_1" id="1" dbms="oracle" runOnChange="true" failOnError="true">
 		<sqlFile encoding="utf8"
 			path="../Sql_Scripts/01_DDL_Script.sql"
-			splitStatements="true" stripComments="true" endDelimiter=";" />
+			splitStatements="true" stripComments="true" endDelimiter=";"/>
 		<rollback>
 			<sqlFile encoding="utf8"
 				path="../Sql_Scripts/01_DDL_Script-Rollback.sql"
