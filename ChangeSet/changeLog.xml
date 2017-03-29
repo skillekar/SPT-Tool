@@ -7,9 +7,15 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <changeSet author="TEST_REQ_1" id="1" dbms="oracle" runOnChange="true" failOnError="true">
+    <changeSet author="Swapneel" id="1" dbms="oracle" runOnChange="true" failOnError="true">
 		<sqlFile encoding="utf8"
 			path="../Sql_Scripts/01_DDL_Script.sql"
+			splitStatements="true" stripComments="true" endDelimiter=";"/>
+		<sqlFile encoding="utf8"
+			path="../Sql_Scripts/Basescripts/01_Country_Inserts.sql"
+			splitStatements="true" stripComments="true" endDelimiter=";"/>
+		<sqlFile encoding="utf8"
+			path="../Sql_Scripts/Basescripts/01_State_Inserts.sql"
 			splitStatements="true" stripComments="true" endDelimiter=";"/>
 		<rollback>
 			<sqlFile encoding="utf8"
