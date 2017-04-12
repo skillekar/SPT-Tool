@@ -2,7 +2,7 @@ CREATE TABLE country_master
 (
 	COUNTRY_PK number(10,0) NOT NULL,
 	NAME varchar2(50 char) NOT NULL UNIQUE,
-	ABBR varchar2(5 char),
+	COUNTRY_ABBR varchar2(5 char),
 	STATUS varchar2(1) NOT NULL,
 	DELETED varchar2(1) NOT NULL,
 	CREATED_BY varchar2(20) NOT NULL,

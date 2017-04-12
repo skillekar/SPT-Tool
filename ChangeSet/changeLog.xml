@@ -7,7 +7,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
         http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
 
-    <changeSet author="Swapneel" id="ChangeSet-1" dbms="oracle" runOnChange="true" failOnError="true">
+    <changeSet author="Jenkins-User" id="ChangeSet-1" dbms="oracle" runOnChange="true" failOnError="true">
 		<sqlFile encoding="utf8"
 			path="../Sql_Scripts/01_DDL_Script.sql"
 			splitStatements="true" stripComments="true" endDelimiter=";"/>
